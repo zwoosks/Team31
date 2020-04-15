@@ -18,7 +18,7 @@ public class App {
     @SuppressWarnings("deprecation")
 	public static void main(String[] args) throws LoginException {
         
-    	jda = new JDABuilder(AccountType.BOT).setToken("Njk5MzE3NjY5MDEwMjEwODg3.XpSslQ.QdQFSXGzasjjyGZfR9pssYb4GmA").buildAsync();
+    	jda = new JDABuilder(AccountType.BOT).setToken("TOKEN").buildAsync();
     	jda.getPresence().setStatus(OnlineStatus.ONLINE);
     	jda.getPresence().setGame(Game.watching(Jugadors.getJugadors()));
     	jda.addEventListener(new Commands());
